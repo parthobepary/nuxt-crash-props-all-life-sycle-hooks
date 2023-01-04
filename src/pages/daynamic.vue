@@ -13,12 +13,18 @@ const toggol = () =>{
         message.value = resolveComponent('welcome')
     }
 }
+const goHome = () => {
+    navigateTo('/')
+}
 </script>
 <template>
     <div class="max-auto container text-center">
         <h1>This is dynamic component</h1>
         <button class="px-4 py-1 bg-blue-200 my-2 rounded-lg" @click="toggol">{{text}}</button>
         <component :is="message"></component>
+        <div>
+            <button class="px-6 py-1 bg-green-200" @click="goHome">go to home</button>
+        </div>
     </div>
 </template>
 
