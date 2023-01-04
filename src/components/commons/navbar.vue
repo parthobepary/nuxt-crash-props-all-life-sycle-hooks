@@ -1,5 +1,6 @@
 <script setup>
 const cart = useCart()
+const token = UseToken()
 console.log(cart.value.length);
 </script>
 <template>
@@ -8,5 +9,8 @@ console.log(cart.value.length);
         <nuxt-link class="mx-5 underline"  to="/daynamic">Dynamic</nuxt-link>
         <nuxt-link class="underline" to="/phones/">Phones</nuxt-link>
         <nuxt-link class="mx-5 underline" to="/cart/">Cart{{cart.length}}</nuxt-link>
+        <nuxt-link class="mx-5 underline" to="/auth/signin">Login</nuxt-link>
+        <nuxt-link class="mx-5 underline" to="/auth/signup">Register</nuxt-link>
+<p>{{token}}</p>
     </div>
 </template>
