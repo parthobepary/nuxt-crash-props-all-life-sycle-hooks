@@ -10,5 +10,6 @@
         <Welcome />
         <Counter />
         <about-message />
+        <HereAllLifeSycle />
     </div>
 </template>
