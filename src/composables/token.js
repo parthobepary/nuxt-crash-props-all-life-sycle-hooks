@@ -1,1 +1,1 @@
-export const UseToken = () => useState(() => '')
+export const UseToken = () => useState(() => false)

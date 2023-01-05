@@ -1,7 +1,6 @@
 <script setup>
 const cart = useCart()
 const token = UseToken()
-console.log(cart.value.length);
 </script>
 <template>
     <div class="text-center mb-3 bg-green-200 py-3">
